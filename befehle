@@ -1,0 +1,5 @@
+pwd= wo ich mich befinde 
+ls= was auf dem pfad wo ich bin gibt
+cd "Ordner"= wohin ich gehe will
+mkdir "ordern name" = ornder esrtellen
+alias sshkey="pbcopy < ~/.ssh/id_rsa.pub"alias sshkey="pbcopy < ~/.ssh/id_rsa.pub"
