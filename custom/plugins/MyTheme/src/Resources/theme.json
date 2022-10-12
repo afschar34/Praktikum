@@ -1,0 +1,79 @@
+{
+  "name": "MyTheme",
+  "author": "Shopware AG",
+  "views": [
+     "@Storefront",
+     "@Plugins",
+     "@MyTheme"
+  ],
+  "style": [
+    "app/storefront/src/scss/overrides.scss",
+    "@Storefront",
+    "app/storefront/src/scss/base.scss"
+  ],
+  "script": [
+    "@Storefront",
+    "app/storefront/dist/storefront/js/my-theme.js"
+  ],
+  "asset": [
+    "@Storefront",
+    "app/storefront/src/assets"
+  ],
+  "config": {
+    "blocks": {
+      "exampleBlock": {
+        "label": {
+          "en-GB": "Example block",
+          "de-DE": "Beispiel Block"
+        }
+      }
+    },
+    "sections": {
+      "exampleSection": {
+        "label": {
+          "en-GB": "Example section",
+          "de-DE": "Beispiel Sektion"
+        }
+      }
+    },
+    "fields": {
+      "my-single-select-field": {
+        "label": {
+          "en-GB": "Select a font size",
+          "de-DE": "Wähle ein Schriftgröße"
+        },
+        "type": "text",
+        "value": "24",
+        "custom": {
+          "componentName": "sw-single-select",
+          "options": [
+            {
+              "value": "16",
+              "label": {
+                "en-GB": "16px",
+                "de-DE": "16px"
+              }
+            },
+            {
+              "value": "20",
+              "label": {
+                "en-GB": "20px",
+                "de-DE": "20px"
+              }
+            },
+            {
+              "value": "24",
+              "label": {
+                "en-GB": "24px",
+                "de-DE": "24px"
+              }
+            }
+          ]
+        },
+        "editable": true,
+        "block": "exampleBlock",
+        "section": "exampleSection"
+      }
+    }
+  }
+}
